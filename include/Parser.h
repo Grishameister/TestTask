@@ -1,7 +1,7 @@
 #ifndef TESTTASK_PARSER_H
 #define TESTTASK_PARSER_H
+
 #include <string>
-#include <iostream>
 
 struct Table {
     std::string name_;

@@ -1,12 +1,16 @@
 #ifndef TESTTASK_FILEWORKER_H
 #define TESTTASK_FILEWORKER_H
+
 #include <string>
 
 class FileWorker {
 public:
     FileWorker() = default;
+    ~FileWorker() = default;
+
     bool ReadFileToBuf(const std::string& filename);
-    bool WriteBufToFile(const std::string& filename);
+    void WriteBufToFile(const std::string& filename);
+
     std::string GetInputBuf();
     void SetOutputBuf(const std::string& ready_to_write);
 private:

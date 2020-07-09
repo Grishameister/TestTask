@@ -14,10 +14,9 @@ bool FileWorker::ReadFileToBuf(const std::string& filename) {
     return true;
 }
 
-bool FileWorker::WriteBufToFile(const std::string& filename) {
+void FileWorker::WriteBufToFile(const std::string& filename) {
     std::ofstream fs(filename);
     fs.write(output_buffer_.c_str(), output_buffer_.length() - 1);
-    return true;
 }
 
 void FileWorker::SetOutputBuf(const std::string& ready_to_write) {
