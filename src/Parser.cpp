@@ -16,7 +16,7 @@ std::string Parser::Parse(const std::string &block) {
         start_block = end_block;
         start_field = start_block;
     }
-    return {};
+    return result;
 }
 
 std::string Parser::ParseField(const std::string& input_str, const std::string& find_start, const std::string& find_end,
