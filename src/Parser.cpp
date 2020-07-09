@@ -1,6 +1,6 @@
 #include "Parser.h"
 
-std::string Parser::Parse(const std::string &block) {
+std::string Parser::Parse(const std::string& block) {
     size_t end_block = 0;
     size_t start_block = 0;
     size_t start_field = 0;
